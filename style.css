@@ -35,3 +35,20 @@ a { color: var(--link); }
 .lede { color: var(--muted); margin: 0; }
 .small { color: var(--muted); font-size: 14px; }
 footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.download { margin: 20px 0 0; }
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #111827;
+}
+.button:hover { background: #1f2937; }
+.button:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+@media (prefers-color-scheme: dark) {
+  .button { background: #f3f4f6; color: #111827; border-color: #f3f4f6; }
+  .button:hover { background: #ffffff; }
+}
